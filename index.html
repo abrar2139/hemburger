@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hemburger</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- <nav id="navbar">
+        <div class="innernav">
+
+            <div class="logo">
+                <img alt="Acme Outdoors Logo"
+                src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg">
+            </div>
+            <div class="links">
+                <li class="seperate"><a href="">Home</a></li>
+                <li class="seperate"><a href="">About</a></li>
+                <li class="seperate"><a href="">Shop</a></li>
+                <li class="seperate"><a href="">Donate</a></li>
+                <li class="seperate"><a href="">Contact</a></li>
+                <li><a href=""><i class="fa fa-shopping-cart" style="font-size:36px"></i></a></li>
+                 <div class="manu-icon">
+                    <i class="fa fa-bars" style="font-size:36px"></i>
+                </div> 
+            </div>
+        </div>
+        </nav> -->
+<nav class="innernav">
+    <div class="logo">
+        <img alt="Acme Outdoors Logo"
+        src="https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e7ff57adad44d1f072965b6_logo.svg">
+    </div>
+    <div id="manuList" class="links">
+        <li class="seperate"><a href="">Home</a></li>
+        <li class="seperate"><a href="">About</a></li>
+        <li class="seperate"><a href="">Shop</a></li>
+        <li class="seperate"><a href="">Donate</a></li>
+        <li class="seperate"><a href="">Contact</a></li>
+        <li><a href=""><i class="fa fa-shopping-cart" style="font-size:36px"></i></a></li>
+    </div>
+    <div class="manu-icon">
+        <i class="fa fa-bars" style="font-size:36px" onclick="Togglemanu()"></i>
+    </div>
+</nav>
+
+  <script>
+    let manulist = document.getElementById("manuList")
+    manulist.style.maxHeight = "0px";
+
+    function Togglemanu(){
+        if (manuList.style.maxHeight==="0px") 
+        {
+            manuList.style.maxHeight="450px";
+        }
+         else {
+            manuList.style.maxHeight = "0px";
+
+            
+        }
+    } 
+  </script>  
+
+</body>
+</html>

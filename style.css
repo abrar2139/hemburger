@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #5678;
+}
+.logo h1{
+    color: antiquewhite;
+
+}
+.innernav{
+padding: 10px 30px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color: #eb5757;
+position: relative;
+height: 70px;
+}
+.innernav .links{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.innernav .links a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.manu-icon{
+
+    display: none;
+}
+.manu-icon i{
+    color: antiquewhite;
+    cursor: pointer;
+}
+
+@media (max-width:900px) {
+    .innernav .links {
+       position: absolute; 
+       top: 70px;
+       left: 0;
+       right: 0;
+       background-color: #eb5757;
+       flex-direction: column;
+       text-align: center;
+       gap: 0;
+       overflow: hidden;
+    }
+    .innernav .links li {
+        padding: 20px;
+    }
+    .manu-icon{
+        display: block;
+    }
+    #manuList{
+        transition: all 0.6s ease-in-out;
+    }
+}
